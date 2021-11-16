@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Signup</title>
+{% endblock %}
+{% block content %}
+ <div class="contact-form section-padding-0-100">
+        <div class="container">
+           <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h2>Register</h2>
+                        <p>Create a new account</p>
+                    </div>
+                </div>
+            </div>
+           <div class="row">
+                <div class="col-12">
+                    <!-- Contact Form Area -->
+                    <div class="contact-form-area">
+                        <form action="" method="POST">
+                            {% csrf_token %}
+                             {{ form.non_field_errors }}
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">First Name</label>
+                                <input type="text" class="form-control" placeholder="Enter First Name" name="username" id="id_username">{{ form.username.errors }}
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input class="form-control" placeholder="Enter Email" type="email" name="email" id="id_email">{{ form.email.errors }}
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input id="id_password1" type="password" name="password1" class="form-control" placeholder="Password">{{ form.password1.errors }}
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Confirm Password</label>
+                                <input class="form-control" placeholder="Confirm Password" id="id_password2" type="password" name="password2">{{ form.password2.errors }}
+                            </div>
+                            <button type="submit" class="btn crose-btn mt-15">Submit</button>
+                        </form>
+                        {% for message in messages %}
+                        	<h5 style="margin-top: 10px; color:red">{{message}}</h5>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block sidebar %}
+{% endblock %}
