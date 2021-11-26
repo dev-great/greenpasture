@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-@jt$le7b&kba&)zoy@y*efx!v-$xnx14#d+t)u6e=m50dhumep
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['greenpasture.herokuapp.com', '127.0.0.1', 'spiritoflifeministry.org']
+ALLOWED_HOSTS = ['greenpasture.herokuapp.com', '127.0.0.1', 'spiritoflifeministry.org', 'wwww.spiritoflifeministry.org']
 
 
 # Application definition
