@@ -14,11 +14,11 @@
                 <div class="blog-image">
                   <div class="owl-carousel owl-carousel2 blog-item">
                     <div class="item">
-                      <a href="{% url 'blog:blog-detail' post.slug %}" class="blog image-popup-link" style="background-image: url('{{post.img.url}}');">
+                      <a href="{% url 'blog:blog-detail' post.slug %}" class="blog image-popup-link" style="background-image: url('./media/{{post.img.url}}');">
                       </a>
                     </div>
                     <div class="item">
-                      <a href="{% url 'blog:blog-detail' post.slug %}" class="blog image-popup-link" style="background-image: url('{{post.img.url}}');">
+                      <a href="{% url 'blog:blog-detail' post.slug %}" class="blog image-popup-link" style="background-image: url('./media/{{post.img.url}}');">
                       </a>
                     </div>
                   </div>
