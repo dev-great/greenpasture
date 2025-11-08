@@ -87,7 +87,11 @@
                     <nav class="classy-navbar justify-content-between" id="croseNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="{% static 'images/logo.jpg' %}" alt=""></a>
+                       <a href="index.html" class="navbar-brand">
+  <img src="{% static 'images/logo.png' %}" alt="Logo" class="img-fluid" style="max-height: 60px;">
+</a>
+
+
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -108,20 +112,7 @@
                                     <li><a href="{% url 'home:index' %}">Home</a>
 									<li><a href="{% url 'about:about' %}">About</a></li>
                                     <li><a href="{% url 'blog:blog' %}">Blog</a></li>
-                                    <li class=" cn-dropdown-item single-mega has-down">
-                                        <a href="#" class="megamenu-item has-down " data-toggle="dropdown" role="button" aria-haspopup="true"
-                                          aria-expanded="false">Account</a>
-                                        <ul class="dropdown breakpoint-on ">
-                                           {% if user.is_authenticated %}
-                                          <li><a href="{% url 'store:store' %}">Store</a></li>
-                                          <li><a href="{% url 'account:logout' %}">Log out</a></li>
-                                           {% else %}
-                                          <li> <a href="{% url 'account:login_view' %}">LogIn</a></li>
-                                           <li><a href="{% url 'account:register_view' %}">Register</a></li>
-                                        {% endif %}
-                                        </ul>
-                                    </li>
-                                    <li><a href="{% url 'store:store' %}">Store</a></li>
+                                   
                                     <li><a href="{% url 'contact:contact_us' %}">Contact</a></li>
                                 </ul>
 

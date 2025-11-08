@@ -5,6 +5,7 @@ from .models import Post, Categories, PostComment
 from home.models import Livestream
 from django.db.models import Q
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import AnonymousUser
 from django.core.paginator import Paginator
 from django.http import HttpResponseNotFound, Http404
 
@@ -77,11 +78,18 @@ class blogdetail(DetailView):
       context["latestpost_list"] = latestpost_list
       return context
 
-@login_required
 def send_comment(request, slug):
-   message = request.POST.get('message')
-   post_id = request.POST.get('post_id')
-   post_comment = PostComment.objects.create(sender=request.user, message=message)
-   post = Post.objects.filter(id=post_id).first()
-   post.comments.add(post_comment)
-   return redirect('.')
+    if request.method == "POST":
+        message = request.POST.get('message')
+        post_id = request.POST.get('post_id')
+
+        # Handle anonymous users
+        sender = None if isinstance(request.user, AnonymousUser) else request.user
+
+        post_comment = PostComment.objects.create(sender=sender, message=message)
+
+        post = Post.objects.filter(id=post_id).first()
+        if post:
+            post.comments.add(post_comment)
+
+    return redirect('.')

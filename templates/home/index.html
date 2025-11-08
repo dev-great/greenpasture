@@ -1,374 +1,371 @@
  {% extends 'base.html' %}
  {% load static %}
   {% block title %} THE SPIRIT OF LIFE MINISTRY INTERNATIONAL INCORPORATED | HOME {% endblock %}
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            $('.hero-post-slides').find('.owl-nav').hide();
+            $('.hero-post-slides').find('.owl-dots').hide();
+        });
+    </script>
 
  {% block content %}
+<!-- ##### Hero Area Start ##### -->
+<section class="hero-area hero-post-slides owl-carousel">
 
-    <!-- ##### Hero Area Start ##### -->
-    <section class="hero-area hero-post-slides owl-carousel">
-        <!-- Single Hero Slide -->
-        <div class="single-hero-slide bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(./static/images/bg.jpg);">
-            <!-- Post Content -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="hero-slides-content">
-                            <h2 data-animation="fadeInUp" data-delay="100ms">THE SPIRIT OF LIFE MINISTRY INTERNATIONAL INCORPORATED.</h2>
-                            <p data-animation="fadeInUp" data-delay="300ms">Reaching out to the world with the word of God with emphasis on purity and power, prosperity and purpose...</p>
-                            <a href="{% url 'blog:blog' %}" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">MORE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Single Hero Slide -->
-        <div class="single-hero-slide bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(./static/images/bg.jpg);">
-            <!-- Post Content -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="hero-slides-content">
-                            <h2 data-animation="fadeInUp" data-delay="100ms">THE SPIRIT OF LIFE BIBLE COLLEGE</h2>
-                            <p data-animation="fadeInUp" data-delay="300ms">Training and equiping men and women with the word and necessary skills that will enable them to reach...</p>
-                            <a href="{% url 'blog:blog' %}" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">MORE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-		
-		<div class="single-hero-slide bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(./static/images/bg.jpg);">
-            <!-- Post Content -->
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="hero-slides-content">
-                            <h2 data-animation="fadeInUp" data-delay="100ms">THE EVERGREEN EXCELLENCE ACADEMY</h2>
-                            <p data-animation="fadeInUp" data-delay="300ms">A nursery and primary school established by the ministry in 2001.The school is a faith based educational...</p>
-                            <a href="{% url 'blog:blog' %}" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">MORE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Hero Area End ##### -->
-
-    <!-- ##### About Area Start ##### -->
-    <section class="about-area section-padding-100-0">
+    <!-- Single Hero Slide -->
+    <div class="single-hero-slide bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(./static/images/bg.jpg);">
+        <!-- Post Content -->
         <div class="container">
             <div class="row">
-                <!-- Section Heading -->
                 <div class="col-12">
-                    <div class="section-heading">
-                        <h2>Welcome To SOLM</h2>
-                        <p>We are reaching out to the world with the word of God and with emphasis on purity and power, prosperity and purpose, teaching his word with diverse miracles, healing, deliverances and salvation of souls..</p>
+                    <div class="hero-slides-content">
+                        <h2 data-animation="fadeInUp" data-delay="100ms">THE SPIRIT OF LIFE MINISTRY INTERNATIONAL INCORPORATED</h2>
+                        <p data-animation="fadeInUp" data-delay="300ms">Reaching out to the world with the word of God with emphasis on purity and power, prosperity and purpose...</p>
+                        <a href="{% url 'blog:blog' %}" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">MORE</a>
                     </div>
                 </div>
             </div>
-
-            <div class="row about-content justify-content-center">
-                <!-- Single About Us Content -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="about-us-content mb-100">
-                        <img src="{% static 'images/top-1.png' %}" alt="">
-                        <div class="about-text">
-                            <h4>CHRISTIAN EDUCATION</h4>
-                            <p>The Spirit of life Bible college is the ministerial training arm of the ministry which was established in 2000 By Bishop...</p>
-                            <a href="{% url 'blog:blog' %}">Read More <i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single About Us Content -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="about-us-content mb-100">
-                       <a href="{% url 'blog:blog' %}"> <img src="{% static 'images/top-2.jpg' %}" alt="#"></a>
-                        <div class="about-text">
-                        	<a href="{% url 'blog:blog' %}">
-                            <h4>SPIRIT OF LIFE DEVOTIONAL</h4></i></a>
-                            <p>These serve as avenues to release the dynamic and apostolic teaching ministry of the man of God to the world...</p>
-                            <a href="{% url 'blog:blog' %}">Read More <i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single About Us Content -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="about-us-content mb-100">
-                        <a href="{% url 'blog:blog' %}" alt=""><img src="{% static 'images/top-3.png' %}" alt="#"></a>
-                        <div class="about-text">
-                           <a href="{% url 'blog:blog' %}"> <h4>HOUR OF LIFE RADIO BROADCAST</h4></a>
-                            <p>The man of God reaches out to multitudes of radio audience through the Jordan 93.9 fm ...</p>
-                            <a href="{% url 'blog:blog' %}">Read More <i class="fa fa-angle-double-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### About Area End ##### -->
-    {% for Livestream in Livestream %}
-    <section class="call-to-action-area section-padding-100 bg-img bg-overlay uza-about-us-area" style="background-image: url('./static/images/blog-7.jpg')">
-        <div class="container">
-            <div class="row align-items-center">
-
-                <!-- About Thumbnail -->
-                <div class="col-12 col-md-6">
-                    <div class="about-us-thumbnail mb-60 video colorlib-video" >
-                        <img src="{{ Livestream.Livestream_Image.url }}" style="border-radius:30px;" alt="">
-                        <!-- Video Area -->
-                        <div class="uza-video-area hi-icon-effect-8">
-                            <a href="{{ Livestream.Livestream_URL }}" class="popup-vimeo"><i class="icon-play" aria-hidden="true"></i></a>
-
-                        </div>
-                       
-                    </div>
-                </div>
-                <div class="overlay"></div>
-                <!-- About Us Content -->
-                <div class="col-12 col-md-6">
-                    <div class="about-us-content mb-80 section-heading" style="text-align: left;">
-                        <h2 style="color: #fff">{{ Livestream.Livestream_Title }}</h2>
-                        <p style="color: #fff">{{ Livestream.Livestream_Title }}</p>
-                    </div>
-                </div>
-            </div>
-    </section>
-     {% empty %}
-    <div class="alert alert-danger">There is no comment</div>
-  {% endfor %}
-    <!-- ##### Call To Action Area End ##### -->
-
-    <!-- ##### Latest Sermons Area Start ##### -->
-    <section class="latest-sermons-area section-padding-100-0">
-        <div class="container">
-            <div class="row">
-                <!-- Section Heading -->
-                <div class="col-12">
-                    <div class="section-heading">
-                        <h2>Service days </h2>
-                        <p>We have some power packed program meant for uplifting you this season make it a date with destiny on the following days.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <!-- Single Latest Sermons -->
-                <div class="col-8 col-md-4 col-lg-3">
-                    <div class="single-latest-sermons mb-100">
-                        <div class="sermons-thumbnail">
-                            <img src="{% static 'images/db-1.jpg' %}" alt="">
-                            <!-- Date -->
-                            <div class="sermons-date">
-                                <h6><span>8:00</span>AM</h6>
-                            </div>
-                        </div>
-                        <div class="sermons-content">
-                           
-                            <h4>Sunday miracle worship services</h4>
-                            <div class="sermons-meta-data">
-                                <p><i class="fa fa-user" aria-hidden="true"></i> With <span>Bishop & Dr (Mrs) Samuel D. Ocheja,</span></p>
-                                <p><i class="fa fa-tag" aria-hidden="true"></i>Men and women gather for worship and instruction in the word of God in an atmosphere of love, 
-								and power where healing, deliverance and miracles occur.</p>
-                                <p><i class="fa fa-clock-o" aria-hidden="true"></i> This Sunday <span>8am</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-8 col-md-4 col-lg-3">
-                    <div class="single-latest-sermons mb-100">
-                        <div class="sermons-thumbnail">
-                            <img src="{% static 'images/db-2.jpg' %}" alt="">
-                            <!-- Date -->
-                            <div class="sermons-date">
-                                <h6><span>6:00</span>PM</h6>
-                            </div>
-                        </div>
-                        <div class="sermons-content">
-                          
-                            <h4>Wednesday: Word and communion Service</h4>
-                            <div class="sermons-meta-data">
-                                <p><i class="fa fa-user" aria-hidden="true"></i> With <span>Bishop & Dr (Mrs) Samuel D. Ocheja,</span></p>
-                                <p><i class="fa fa-tag" aria-hidden="true"></i> The hour of deliverance and impactation from our bishop, and also sharing of the body of christ</p>
-                                <p><i class="fa fa-clock-o" aria-hidden="true"></i> Every Wednesday<span>6:00 pm</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Latest Sermons -->
-                <div class="col-8 col-md-4 col-lg-3">
-                    <div class="single-latest-sermons mb-100">
-                        <div class="sermons-thumbnail">
-                            <img src="{% static 'images/db-3.jpg' %}" alt="">
-                            <!-- Date -->
-                            <div class="sermons-date">
-                                <h6><span>6:00</span>PM</h6>
-                            </div>
-                        </div>
-                        <div class="sermons-content">
-                            
-                            <h4>Friday miracle & revival hour</h4>
-                            <div class="sermons-meta-data">
-                                <p><i class="fa fa-user" aria-hidden="true"></i> With <span>Bishop & Dr (Mrs) Samuel D. Ocheja,</span></p>
-                                <p><i class="fa fa-tag" aria-hidden="true"></i>Restoring the part of life to men to dwell in, building the old wasted and, 
-								repairing the wasted cites in the lives of men.</p>
-                                <p><i class="fa fa-clock-o" aria-hidden="true"></i> Every Friday<span>6:00 pm</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Latest Sermons -->
-                <div class="col-8 col-md-4 col-lg-3">
-                    <div class="single-latest-sermons mb-100">
-                        <div class="sermons-thumbnail">
-                            <img src="{% static 'images/db-4.jpg' %}" alt="">
-                            <!-- Date -->
-                            <div class="sermons-date">
-                                <h6><span>10</span>PM</h6>
-                            </div>
-                        </div>
-                        <div class="sermons-content">
-                            <div class="sermons-cata">
-                            <h4>Praise and Possibility Night</h4>
-                            <div class="sermons-meta-data">
-                                <p><i class="fa fa-user" aria-hidden="true"></i> With <span>Bishop & Dr (Mrs) Samuel D. Ocheja,</span></p>
-                                <p><i class="fa fa-tag" aria-hidden="true"></i> Come with expectation to experience 
-								open heavens and outpourings of miracles in an atmosphere of intensive praise and worship.</p>
-                                <p><i class="fa fa-clock-o" aria-hidden="true"></i> Every last Friday of the month <span>10 pm</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ##### Latest Sermons Area End ##### -->
-
-    
-
-    <!-- ##### Gallery Area Start ##### -->
-    <div class="gallery-area d-flex flex-wrap">
-        <!-- Single Gallery Area -->
-        <div class="single-gallery-area">
-            <a href="{% static 'images/gallery-1.jpg' %}" class="gallery-img" title="Gallery Image 1">
-                <img src="{% static 'images/gallery-1.jpg' %}" alt="">
-            </a>
-        </div>
-
-        <!-- Single Gallery Area -->
-        <div class="single-gallery-area">
-            <a href="{% static 'images/gallery-2.jpg' %}" class="gallery-img" title="Gallery Image 2">
-                <img src="{% static 'images/gallery-2.jpg' %}" alt="">
-            </a>
-        </div>
-
-        <!-- Single Gallery Area -->
-        <div class="single-gallery-area">
-            <a href="{% static 'images/gallery-3.jpg' %}" class="gallery-img" title="Gallery Image 3">
-                <img src="{% static 'images/gallery-3.jpg' %}" alt="">
-            </a>
-        </div>
-
-        <!-- Single Gallery Area -->
-        <div class="single-gallery-area">
-            <a href="{% static 'images/gallery-4.jpg' %}" class="gallery-img" title="Gallery Image 4">
-                <img src="{% static 'images/gallery-4.jpg' %}" alt="">
-            </a>
-        </div>
-
-        <!-- Single Gallery Area -->
-        <div class="single-gallery-area">
-            <a href="{% static 'images/gallery-5.jpg' %}" class="gallery-img" title="Gallery Image 6">
-                <img src="{% static 'images/gallery-5.jpg' %}" alt="">
-            </a>
-        </div>
-
-        <!-- Single Gallery Area -->
-        <div class="single-gallery-area">
-            <a href="{% static 'images/gallery-6.jpg' %}" class="gallery-img" title="Gallery Image 6">
-                <img src="{% static 'images/gallery-6.jpg' %}" alt="">
-            </a>
-        </div>
-
-        <!-- Single Gallery Area -->
-        <div class="single-gallery-area">
-            <a href="{% static 'images/gallery-7.jpg' %}" class="gallery-img" title="Gallery Image 7">
-                <img src="{% static 'images/gallery-7.jpg' %}" alt="">
-            </a>
-        </div>
-
-        <!-- Single Gallery Area -->
-        <div class="single-gallery-area">
-            <a href="{% static 'images/gallery-8.jpg' %}" class="gallery-img" title="Gallery Image 8">
-                <img src="{% static 'images/gallery-8.jpg' %}" alt="">
-            </a>
-        </div>
-
-        <!-- Single Gallery Area -->
-        <div class="single-gallery-area">
-            <a href="{% static 'images/gallery-3.jpg' %}" class="gallery-img" title="Gallery Image 9">
-                <img src="{% static 'images/gallery-3.jpg' %}" alt="">
-            </a>
-        </div>
-
-        <!-- Single Gallery Area -->
-        <div class="single-gallery-area">
-            <a href="{% static 'images/gallery-7.jpg' %}" class="gallery-img" title="Gallery Image 10">
-                <img src="{% static 'images/gallery-7.jpg' %}" alt="">
-            </a>
         </div>
     </div>
-    <!-- ##### Gallery Area End ##### -->
-	
-	<div class="container">
-              <div class="modal fade" id="partner" role="dialog">
-                <div class="modal-dialog">
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      
-                      <h4 class="modal-title" style="color:red"   >PARTNER WITH THE MINISTRY TODAY</h4>
-                    </div>
-                    <div align="center" class="modal-body">
-                        
-                       <p>ACCOUNT NAME: SPIRIT OF LIFE MINISTRY INT’L INC.<br>BANK: ZENITH BANK PLC<br>AC NO.1011889864<br>BANK: ECO BANK PLC<br>AC.NO.0008766828.</p><br>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn crose-btn" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-   
-
-    <!-- ##### Subscribe Area Start ##### -->
-    <section class="subscribe-area">
+    <!-- Single Hero Slide -->
+    <div class="single-hero-slide bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(./static/images/bg.jpg);">
+        <!-- Post Content -->
         <div class="container">
-            <div class="row align-items-center">
-                <!-- Subscribe Text -->
-                <div class="col-12 col-lg-6">
-                    <div class="subscribe-text">
-                        <h3>Subscribe To Our Newsletter</h3>
-                        <h6>Subcribe to receive our monthly newsletters today!</h6>
-                    </div>
-                </div>
-                <!-- Subscribe Form -->
-                <div class="col-12 col-lg-6">
-                    <div class="subscribe-form text-right">
-                        <form action="#">
-                            <input type="email" name="subscribe-email" id="subscribeEmail" placeholder="Your Email">
-                            <button type="submit" class="btn crose-btn">subscribe</button>
-                        </form>
+            <div class="row">
+                <div class="col-12">
+                    <div class="hero-slides-content">
+                        <h2 data-animation="fadeInUp" data-delay="100ms">THE SPIRIT OF LIFE BIBLE COLLEGE</h2>
+                        <p data-animation="fadeInUp" data-delay="300ms">Training and equipping men and women with the word and necessary skills that will enable them to reach...</p>
+                        <a href="{% url 'blog:blog' %}" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">MORE</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="single-hero-slide bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(./static/images/bg.jpg);">
+        <!-- Post Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="hero-slides-content">
+                        <h2 data-animation="fadeInUp" data-delay="100ms">THE EVERGREEN EXCELLENCE ACADEMY</h2>
+                        <p data-animation="fadeInUp" data-delay="300ms">A nursery and primary school established by the ministry in 2001. The school is a faith-based educational...</p>
+                        <a href="{% url 'blog:blog' %}" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">MORE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Hero Area End ##### -->
+
+<!-- ##### About Area Start ##### -->
+<section class="about-area section-padding-100-0">
+    <div class="container">
+        <div class="row">
+            <!-- Section Heading -->
+            <div class="col-12">
+                <div class="section-heading">
+                    <h2>Welcome To SOLM</h2>
+                    <p>We are reaching out to the world with the word of God and with emphasis on purity and power, prosperity and purpose, teaching His word with diverse miracles, healing, deliverances and salvation of souls.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row about-content justify-content-center">
+            <!-- Single About Us Content -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="about-us-content mb-100">
+                    <img src="{% static 'images/top-1.png' %}" alt="">
+                    <div class="about-text">
+                        <h4>CHRISTIAN EDUCATION</h4>
+                        <p>The Spirit of Life Bible College is the ministerial training arm of the ministry which was established in 2000 by Archbishop...</p>
+                        <a href="{% url 'blog:blog' %}">Read More <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single About Us Content -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="about-us-content mb-100">
+                    <a href="{% url 'blog:blog' %}"><img src="{% static 'images/top-2.jpg' %}" alt="#"></a>
+                    <div class="about-text">
+                        <a href="{% url 'blog:blog' %}">
+                            <h4>SPIRIT OF LIFE DEVOTIONAL</h4>
+                        </a>
+                        <p>These serve as avenues to release the dynamic and apostolic teaching ministry of the man of God to the world...</p>
+                        <a href="{% url 'blog:blog' %}">Read More <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single About Us Content -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="about-us-content mb-100">
+                    <a href="{% url 'blog:blog' %}"><img src="{% static 'images/top-3.png' %}" alt="#"></a>
+                    <div class="about-text">
+                        <a href="{% url 'blog:blog' %}">
+                            <h4>HOUR OF LIFE RADIO BROADCAST</h4>
+                        </a>
+                        <p>The man of God reaches out to multitudes of radio audience through Jordan 93.9 FM...</p>
+                        <a href="{% url 'blog:blog' %}">Read More <i class="fa fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### About Area End ##### -->
+
+{% for Livestream in Livestream %}
+<section class="call-to-action-area section-padding-100 bg-img bg-overlay uza-about-us-area" style="background-image: url('./static/images/blog-7.jpg')">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- About Thumbnail -->
+            <div class="col-12 col-md-6">
+                <div class="about-us-thumbnail mb-60 video colorlib-video">
+                    <img src="{{ Livestream.Livestream_Image.url }}" style="border-radius:30px;" alt="">
+                    <!-- Video Area -->
+                    <div class="uza-video-area hi-icon-effect-8">
+                        <a href="{{ Livestream.Livestream_URL }}" class="popup-vimeo"><i class="icon-play" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
+            <!-- About Us Content -->
+            <div class="col-12 col-md-6">
+                <div class="about-us-content mb-80 section-heading" style="text-align: left;">
+                    <h2 style="color: #fff">{{ Livestream.Livestream_Title }}</h2>
+                    <p style="color: #fff">{{ Livestream.Livestream_Title }}</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- ##### Subscribe Area End ##### -->
+{% empty %}
+    <div class="alert alert-danger">There are no livestreams available</div>
+{% endfor %}
+<!-- ##### Call To Action Area End ##### -->
+
+<!-- ##### Latest Sermons Area Start ##### -->
+<section class="latest-sermons-area section-padding-100-0">
+    <div class="container">
+        <div class="row">
+            <!-- Section Heading -->
+            <div class="col-12">
+                <div class="section-heading">
+                    <h2>Service Days</h2>
+                    <p>We have some power-packed programs meant for uplifting you this season. Make it a date with destiny on the following days.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <!-- Single Latest Sermons -->
+            <div class="col-8 col-md-4 col-lg-3">
+                <div class="single-latest-sermons mb-100">
+                    <div class="sermons-thumbnail">
+                        <img src="{% static 'images/db-1.jpg' %}" alt="">
+                        <!-- Date -->
+                        <div class="sermons-date">
+                            <h6><span>8:00</span>AM</h6>
+                        </div>
+                    </div>
+                    <div class="sermons-content">
+                        <h4>Sunday Miracle Worship Services</h4>
+                        <div class="sermons-meta-data">
+                            <p><i class="fa fa-user" aria-hidden="true"></i> With <span>Archbishop & Dr (Mrs) Samuel D. Ocheja</span></p>
+                            <p><i class="fa fa-tag" aria-hidden="true"></i> Men and women gather for worship and instruction in the word of God in an atmosphere of love and power where healing, deliverance and miracles occur.</p>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> This Sunday <span>8:00 AM</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8 col-md-4 col-lg-3">
+                <div class="single-latest-sermons mb-100">
+                    <div class="sermons-thumbnail">
+                        <img src="{% static 'images/db-2.jpg' %}" alt="">
+                        <!-- Date -->
+                        <div class="sermons-date">
+                            <h6><span>6:00</span>PM</h6>
+                        </div>
+                    </div>
+                    <div class="sermons-content">
+                        <h4>Wednesday: Word and Communion Service</h4>
+                        <div class="sermons-meta-data">
+                            <p><i class="fa fa-user" aria-hidden="true"></i> With <span>Archbishop & Dr (Mrs) Samuel D. Ocheja</span></p>
+                            <p><i class="fa fa-tag" aria-hidden="true"></i> The hour of deliverance and impartation from our Archbishop, and also sharing of the body of Christ</p>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> Every Wednesday <span>6:00 PM</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Latest Sermons -->
+            <div class="col-8 col-md-4 col-lg-3">
+                <div class="single-latest-sermons mb-100">
+                    <div class="sermons-thumbnail">
+                        <img src="{% static 'images/db-3.jpg' %}" alt="">
+                        <!-- Date -->
+                        <div class="sermons-date">
+                            <h6><span>6:00</span>PM</h6>
+                        </div>
+                    </div>
+                    <div class="sermons-content">
+                        <h4>Friday: Prayer/House Care Fellowship</h4>
+                        <div class="sermons-meta-data">
+                            <p><i class="fa fa-user" aria-hidden="true"></i> With <span>Archbishop & Dr (Mrs) Samuel D. Ocheja</span></p>
+                            <p><i class="fa fa-tag" aria-hidden="true"></i> Restoring the part of life to men to dwell in, building the old wasted and repairing the wasted cities in the lives of men.</p>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> Every Friday <span>6:00 PM</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Latest Sermons -->
+            <div class="col-8 col-md-4 col-lg-3">
+                <div class="single-latest-sermons mb-100">
+                    <div class="sermons-thumbnail">
+                        <img src="{% static 'images/db-4.jpg' %}" alt="">
+                        <!-- Date -->
+                        <div class="sermons-date">
+                            <h6><span>10</span>PM</h6>
+                        </div>
+                    </div>
+                    <div class="sermons-content">
+                        <div class="sermons-cata">
+                            <h4>Praise and Possibility Night</h4>
+                            <div class="sermons-meta-data">
+                                <p><i class="fa fa-user" aria-hidden="true"></i> With <span>Archbishop & Dr (Mrs) Samuel D. Ocheja</span></p>
+                                <p><i class="fa fa-tag" aria-hidden="true"></i> Come with expectation to experience open heavens and outpourings of miracles in an atmosphere of intensive praise and worship.</p>
+                                <p><i class="fa fa-clock-o" aria-hidden="true"></i> Every last Friday of the month <span>10:00 PM</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Latest Sermons Area End ##### -->
+
+<!-- ##### Gallery Area Start ##### -->
+<div class="gallery-area d-flex flex-wrap">
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="{% static 'images/gallery-1.jpeg' %}" class="gallery-img" title="Gallery Image 1">
+            <img src="{% static 'images/gallery-1.jpeg' %}" alt="" style="height: 200px; object-fit: cover; width: 100%; border-radius: 6px;">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="{% static 'images/gallery-2.jpeg' %}" class="gallery-img" title="Gallery Image 2">
+            <img src="{% static 'images/gallery-2.jpeg' %}" alt="" style="height: 200px; object-fit: cover; width: 100%; border-radius: 6px;">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="{% static 'images/gallery-3.jpeg' %}" class="gallery-img" title="Gallery Image 3">
+            <img src="{% static 'images/gallery-3.jpeg' %}" alt="" style="height: 200px; object-fit: cover; width: 100%; border-radius: 6px;">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="{% static 'images/gallery-4.jpeg' %}" class="gallery-img" title="Gallery Image 4">
+            <img src="{% static 'images/gallery-4.jpeg' %}" alt="" style="height: 200px; object-fit: cover; width: 100%; border-radius: 6px;">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="{% static 'images/gallery-5.jpeg' %}" class="gallery-img" title="Gallery Image 5">
+            <img src="{% static 'images/gallery-5.jpeg' %}" alt="" style="height: 200px; object-fit: cover; width: 100%; border-radius: 6px;">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="{% static 'images/gallery-6.jpeg' %}" class="gallery-img" title="Gallery Image 6">
+            <img src="{% static 'images/gallery-6.jpeg' %}" alt="" style="height: 200px; object-fit: cover; width: 100%; border-radius: 6px;">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="{% static 'images/gallery-7.jpeg' %}" class="gallery-img" title="Gallery Image 7">
+            <img src="{% static 'images/gallery-7.jpeg' %}" alt="" style="height: 200px; object-fit: cover; width: 100%; border-radius: 6px;">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="{% static 'images/gallery-8.jpeg' %}" class="gallery-img" title="Gallery Image 8">
+            <img src="{% static 'images/gallery-8.jpeg' %}" alt="" style="height: 200px; object-fit: cover; width: 100%; border-radius: 6px;">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="{% static 'images/gallery-3.jpeg' %}" class="gallery-img" title="Gallery Image 9">
+            <img src="{% static 'images/gallery-3.jpeg' %}" alt="" style="height: 200px; object-fit: cover; width: 100%; border-radius: 6px;">
+        </a>
+    </div>
+
+    <!-- Single Gallery Area -->
+    <div class="single-gallery-area">
+        <a href="{% static 'images/gallery-7.jpeg' %}" class="gallery-img" title="Gallery Image 10">
+            <img src="{% static 'images/gallery-7.jpeg' %}" alt="" style="height: 200px; object-fit: cover; width: 100%; border-radius: 6px;">
+        </a>
+    </div>
+</div>
+<!-- ##### Gallery Area End ##### -->
+
+<div class="container">
+    <div class="modal fade" id="partner" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" style="color:red">PARTNER WITH THE MINISTRY TODAY</h4>
+                </div>
+                <div align="center" class="modal-body">
+                    <p>ACCOUNT NAME: SPIRIT OF LIFE MINISTRY INT'L INC.<br>BANK: ZENITH BANK PLC<br>AC NO. 1011889864<br>BANK: ECO BANK PLC<br>AC. NO. 0008766828.</p><br>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn crose-btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ##### Subscribe Area Start ##### -->
+<section class="subscribe-area">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Subscribe Text -->
+            <div class="col-12 col-lg-6">
+                <div class="subscribe-text">
+                    <h3>Subscribe To Our Newsletter</h3>
+                    <h6>Subscribe to receive our monthly newsletters today!</h6>
+                </div>
+            </div>
+            <!-- Subscribe Form -->
+            <div class="col-12 col-lg-6">
+                <div class="subscribe-form text-right">
+                    <form action="#">
+                        <input type="email" name="subscribe-email" id="subscribeEmail" placeholder="Your Email">
+                        <button type="submit" class="btn crose-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ##### Subscribe Area End ##### -->
 {% endblock %}
